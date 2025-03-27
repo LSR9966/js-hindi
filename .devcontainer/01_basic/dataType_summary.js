@@ -72,3 +72,31 @@ console.log(typeof myObj);
 5.RegExp: Represents regular expressions for pattern matching.
 
 */
+
+//*********************************************************************************** */
+
+//Stack (primitive) copy number 
+
+
+//Heap(Non-primitive) address milta hai original number change hota hai
+
+let a=27;
+let b=a; 
+b=78;
+console.log(a); //yaha pe copy me changes hua thaa
+
+let obOne={
+    name:'abc',
+    age:10,
+    bank:2345
+}
+
+
+
+let obTwo=obOne;
+obTwo.age=89;
+console.log(obOne); // yaha seeedha original me changes hua haai by using reference
+
+console.log(obTwo);
+
+ 
