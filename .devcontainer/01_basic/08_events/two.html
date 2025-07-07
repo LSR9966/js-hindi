@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        chai aur code
+        and lalit
+    </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const changeTest=function(){
+        document.querySelector('h1').innerHTML
+        ="best Js series"
+    }
+    setTimeout(changeTest,2000);
+
+    const changeme=setTimeout(function(){
+        console.log("lalit Singh ");     
+    },2000)  //time is in milli second
+
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearTimeout(changeme)
+        console.log("Stopped");
+    })
+</script>
+
+</html>
